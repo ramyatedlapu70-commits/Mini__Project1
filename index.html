@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luminous Ledger - Tip & Split Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="glass-card">
+    <h1 class="title">Tip & Split Calculator</h1>
+    <div class="input-group">
+      <label for="bill">Bill Amount</label>
+      <input type="number" id="bill" placeholder="Enter bill amount">
+    </div>
+    <div class="input-group">
+      <label>Select Tip %</label>
+      <div class="tip-chips">
+        <button class="chip" data-tip="5">5%</button>
+        <button class="chip" data-tip="10">10%</button>
+        <button class="chip" data-tip="15">15%</button>
+        <button class="chip" data-tip="20">20%</button>
+        <button class="chip" data-tip="25">25%</button>
+      </div>
+    </div>
+    <div class="input-group">
+      <label>Number of People</label>
+      <div class="stepper">
+        <button id="decrease">-</button>
+        <span id="people">1</span>
+        <button id="increase">+</button>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="calculate">Calculate</button>
+      <button id="reset">Reset</button>
+    </div>
+    <div class="results">
+      <div class="result-card">
+        <span class="label">Tip Amount</span>
+        <span id="tip-amount" class="value">₹0.00</span>
+      </div>
+      <div class="result-card">
+        <span class="label">Total per Person</span>
+        <span id="total-per-person" class="value highlight">₹0.00</span>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

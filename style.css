@@ -1,0 +1,132 @@
+body {
+  background: linear-gradient(135deg, #0b1326, #131b2e);
+  color: #dae2fd;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.glass-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  padding: 24px;
+  max-width: 480px;
+  width: 100%;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.input-group {
+  margin-bottom: 24px;
+}
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #849495;
+  background: transparent;
+  color: #dae2fd;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #00f0ff;
+}
+.tip-chips {
+  display: flex;
+  gap: 8px;
+}
+.chip {
+  flex: 1;
+  padding: 12px;
+  border-radius: 9999px;
+  border: 1px solid #849495;
+  background: transparent;
+  color: #dae2fd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.chip.active {
+  background: #00f0ff;
+  color: #00363a;
+  border: none;
+}
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.stepper button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #849495;
+  background: rgba(255, 255, 255, 0.05);
+  color: #dae2fd;
+  font-size: 20px;
+  cursor: pointer;
+}
+.stepper span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.actions button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+#calculate {
+  background: #00f0ff;
+  color: #00363a;
+}
+#reset {
+  background: rgba(255, 255, 255, 0.1);
+  color: #dae2fd;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.result-card {
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.value {
+  font-size: 24px;
+  font-weight: 700;
+}
+.highlight {
+  color: #65f2b5; /* Emerald for positive results */
+}
